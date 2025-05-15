@@ -59,10 +59,13 @@ body {
   left: 0;
   color: var(--primary);
 }
-
 .signature {
-  height: 50px;
-  margin-bottom: 1.5rem;
+  height: auto;       /* Maintain aspect ratio */
+  width: 180px;       /* Ideal width for signatures */
+  max-width: 100%;    /* Ensure it doesn't overflow on mobile */
+  margin: 1.5rem 0;   /* Proper spacing */
+  filter: brightness(0); /* Makes black signature stay black */
+}
 }
 
 .contact-links {
